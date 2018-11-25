@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "immer": "^1.8.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.10.0",
     "normalizr": "^3.3.0",

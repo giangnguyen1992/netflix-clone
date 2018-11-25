@@ -21,15 +21,17 @@ class Movies extends Component {
                 <FontAwesomeIcon icon='search' />
             </header>
             <div className={styles.MoviesScroll}>
-                {this.props.movies.map(movie => (
-                    <Movie 
-                        key={movie.id}
-                        name={movie.name}
-                        poster={movie.poster}
-                        duration={movie.duration}
-                        year={movie.year}
-                    />        
-                ))}
+                {this.props.loading
+                    ? "loading..." :
+                        this.props.movies.map(movie => (
+                        <Movie 
+                            key={movie.id}
+                            name={movie.name}
+                            poster={movie.poster}
+                            duration={movie.duration}
+                            year={movie.year}
+                        />        
+                    ))}
             </div>
             <Footer>
                 <button className={btnStyles.Button}>Get Recommended Movies</button>       

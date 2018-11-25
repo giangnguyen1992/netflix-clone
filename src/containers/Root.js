@@ -9,15 +9,16 @@ import App from '../components/App';
 
 import style from '../styled/Root.module.scss';
 import '../styled/Global.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Root = () => {
     return (
         <Provider store={store}>
             <div className={style.Root}>
-                <ToastContainer />
                 <BrowserRouter>
                     <App />
                 </BrowserRouter>
+                <ToastContainer />
                 <DevTools />
             </div>
         </Provider>

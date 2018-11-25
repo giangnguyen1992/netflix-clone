@@ -3,10 +3,11 @@ import { normalize, schema } from 'normalizr';
 
 import { apiPayloadCreator } from '../utils/apiPayloadCreator';
 import { API, SET_MOVIES } from '../constants/actionTypes';
+import { GET_MOVIES } from '../constants/labels';
 
 const getMoviesAC = createAction(API, apiPayloadCreator);
 
-export const getMovies = () => getMoviesAC({url: '/vcvx0', onSuccess: setMovies});
+export const getMovies = () => getMoviesAC({url: '/vcvx0', onSuccess: setMovies, label: GET_MOVIES });
 
 
 function setMovies(movies) {
