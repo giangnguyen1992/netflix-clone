@@ -1,0 +1,23 @@
+.MoviesHeader {
+    height: 70px;
+    display: flex;
+    color: #8b9095;
+    font-size: .8rem;
+    align-items: center;
+
+    &__Title {
+        font-size: inherit;
+        margin: 0 auto;
+    }
+}
+
+.MoviesScroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex: 1 1 0;
+    align-items: center;
+}
+
+
+

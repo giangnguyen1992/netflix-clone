@@ -1,0 +1,17 @@
+.MovieDetails {
+    height: 70px;
+    display: flex;
+    color: #8b9095;
+    font-size: .8rem;
+    align-items: center;
+
+    &__Link {
+        color: inherit;
+        text-decoration: none;
+        margin-left: auto;
+
+        &:hover {
+            color: #fff;
+        }
+    }   
+}
