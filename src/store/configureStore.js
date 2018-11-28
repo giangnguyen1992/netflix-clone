@@ -1,6 +1,8 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import logger from 'redux-logger';
 import DevTools from '../containers/DevTools';
+import { persistStore } from 'redux-persist';
+
 import api from '../middleware/api';
 import rootReducer from '../reducers/index';
 
@@ -21,7 +23,8 @@ const configureStore = (initialState) => {
         })
     }
 
-    return store;
+    const persiststore = persistStore(store);
+    return { store, persiststore };
 };
 
 export default configureStore;

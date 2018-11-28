@@ -24,13 +24,14 @@ class Movies extends Component {
                 {this.props.loading
                     ? "loading..." :
                         this.props.movies.map(movie => (
-                        <Movie 
-                            key={movie.id}
-                            name={movie.name}
-                            poster={movie.poster}
-                            duration={movie.duration}
-                            year={movie.year}
-                        />        
+                            <a className={styles.MoviesLink} href={`/movies/${movie.id}`} key={movie.id}>
+                                <Movie 
+                                    name={movie.name}
+                                    poster={movie.poster}
+                                    duration={movie.duration}
+                                    year={movie.year}
+                                />    
+                            </a>    
                     ))}
             </div>
             <Footer>
