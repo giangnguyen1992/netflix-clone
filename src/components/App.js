@@ -1,17 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import MovieDetails from './MovieDetails';
-import MoviesContainer from '../containers/MoviesContainer';
 
-import style from '../styled/App.module.scss';
+import MovieContainer from './MovieContainer';
+import MoviesContainer from "../containers/MoviesContainer";
+import MovieDetailsContainer from "../containers/MovieDetailsContainer";
 
-const App = () => {
+
+const app = () => {
     return (
-        <section className={style.StyledMovieContainer}>
+        <MovieContainer>
             <Route exact path='/' component={MoviesContainer} />
-            <Route exact path='/movies/:id' component={MovieDetails} />
-        </section>
+            <Route exact path='/movies/:id' component={MovieDetailsContainer} />
+        </MovieContainer>
     );
 };
 
-export default App;
+export default app;

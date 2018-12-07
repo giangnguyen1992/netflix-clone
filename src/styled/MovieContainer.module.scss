@@ -1,9 +1,11 @@
-@import 'theme';
+@import './theme.scss';
 
-.StyledMovieContainer {
-    background-color: $secondaryBg;
+.MovieContainer {
+    background: $secondaryBg;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
 

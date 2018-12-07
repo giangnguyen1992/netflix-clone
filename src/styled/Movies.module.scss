@@ -1,27 +1,25 @@
-.MoviesHeader {
-    height: 70px;
-    display: flex;
-    color: #8b9095;
-    font-size: .8rem;
-    align-items: center;
+.Movies {
 
-    &__Title {
-        font-size: inherit;
-        margin: 0 auto;
+    &__header {
+        height: 70px;
+        display: flex;
+        color: #8b9095;
+        font-size: .8rem;
+        align-items: center;
     }
-}
 
-.MoviesScroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: auto;
-    flex: 1 1 0;
-    align-items: center;
-}
+    &__scroll {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        flex: 1 1 0;
+        align-items: center;
+    }
 
-.MoviesLink {
-    text-decoration: none;
-    cursor: pointer;
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 

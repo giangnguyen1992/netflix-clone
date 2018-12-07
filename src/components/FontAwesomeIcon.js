@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const FontAwesomeIcon = ({icon ='ellipsis-h', text=false}) => {
+const fontAwesomeIcon = ({icon ='ellipsis-h', text=false, onClick }) => {
     return (
-        <Fragment>
-            <span className={`fas fa-${icon}`}></span>
-            {Boolean(text)&&<span>&nbsp;{text}</span>}
-        </Fragment>
+        <div onClick={onClick}>
+            <span className={`fas fa-${icon}`} />
+            {Boolean(text)&&<span> &nbsp; {text} </span>}
+        </div>
     );
 };
 
-export default FontAwesomeIcon;
+export default fontAwesomeIcon;

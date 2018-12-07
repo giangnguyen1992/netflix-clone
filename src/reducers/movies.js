@@ -1,3 +1,4 @@
+// import handleActions NICHT handleAction - plural form
 import { handleActions } from 'redux-actions';
 import { SET_MOVIES } from '../constants/actionTypes';
 

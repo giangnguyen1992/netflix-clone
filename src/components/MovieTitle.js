@@ -4,7 +4,7 @@ import styles from '../styled/MovieTitle.module.scss';
 
 const MovieTitle = (props) => {
     return (
-        <div className={styles.MovieTitle}>{props.children}</div>
+        <div className={props.isLarge ? styles.MovieTitle__isLarge : styles.MovieTitle}>{props.children}</div>
     );
 };
 

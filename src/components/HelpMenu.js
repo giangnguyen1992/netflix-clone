@@ -1,6 +1,7 @@
 import React from "react";
+
 import FontAwesomeIcon from "./FontAwesomeIcon";
-import { helpMsg } from "../constants/toasts";
+import { helpMsg } from "../constants/toast";
 
 const HelpMenu = ({ showToast }) => (
   <FontAwesomeIcon

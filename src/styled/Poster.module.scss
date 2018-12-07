@@ -1,10 +1,13 @@
 @import './theme.scss';
 
-.Poster{
+.Poster {
+    width: $posterWidth;
+    height: $posterHeight;
+    border-radius: 4px;
 
-    &__img {
-        width: $posterWidth;
-        height: $posterHeight;
-        border-radius: 4px;
+    &__isExpanded {
+        width: $posterWidthExpanded;
+        height: $posterHeightExpanded;
+        border-radius: 4px;  
     }
 }

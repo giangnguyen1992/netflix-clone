@@ -5,13 +5,11 @@ export const apiPayloadCreator = ({
     method = 'GET',
     onSuccess = noOp,
     onFailure = noOp,
-    label = '',
-    data = null
+    label = ''
 }) => ({
     url,
     method,
     onSuccess,
     onFailure,
-    data,
     label
 });

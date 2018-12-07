@@ -3,7 +3,11 @@ import { connect } from "react-redux";
 import HelpMenu from "../components/HelpMenu";
 import { showToast } from "../actions/toastActions";
 
-const HelpMenuContainer = props => <HelpMenu {...props} />;
+const HelpMenuContainer = props => {
+  return (
+    <HelpMenu {...props} />
+  );
+};
 
 export default connect(
   null,
