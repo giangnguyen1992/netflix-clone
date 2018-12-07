@@ -2,7 +2,7 @@
 
 ## Features
 
-- build with react.js and redux
+- built with react.js and redux
 - used libraries including: axios, immer, lodash, node-sass, 
  normalizr, react-redux, react-router, react toastify, redux-actions, 
  redux-devtools, redux-logger, redux-persist
